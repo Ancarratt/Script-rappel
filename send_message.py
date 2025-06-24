@@ -3,7 +3,8 @@ import requests
 
 webhook_url = os.environ["DISCORD_WEBHOOK"]
 message = {
-    "content": "N'oubliez pas de faire votre tentative gratuite avant 10 heure / 22 heure ! Et on recharge son boost d'entrainement ! @Sportif"
+    "content": "N'oubliez pas de faire votre tentative gratuite avant 10 heure / 22 heure ! 
+    Et on recharge son boost d'entrainement ! @Sportif"
 }
 
 response = requests.post(webhook_url, json=message)
