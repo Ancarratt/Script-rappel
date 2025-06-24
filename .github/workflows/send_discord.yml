@@ -2,8 +2,8 @@ name: Envoyer message Discord
 
 on:
   schedule:
-    - cron: '0 8 * * *'   # 10h (UTC +2)
-    - cron: '0 20 * * *'  # 22h (UTC +2)
+    - cron: '58 7 * * *'   # 9h58 heure de France
+    - cron: '58 19 * * *'  # 21h58 heure de France
   workflow_dispatch:      # Permet un lancement manuel
 
 jobs:
