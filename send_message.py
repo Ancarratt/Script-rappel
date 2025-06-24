@@ -12,7 +12,7 @@ data = {
     }
 }
 
-response = requests.post(webhook_url, json=message)
+response = requests.post(webhook_url, json=data)
 
 if response.status_code == 204:
     print("Message envoyé avec succès.")
