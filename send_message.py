@@ -2,8 +2,14 @@ import os
 import requests
 
 webhook_url = os.environ["DISCORD_WEBHOOK"]
-message = {
-    "content": "N'oubliez pas de faire votre tentative gratuite avant 10 heure / 22 heure ! Et on recharge son boost d'entrainement ! <@1386975001088884796>"
+
+role_id = "1386975001088884796"
+
+data = {
+    "content": f"<@&{role_id}> N'oubliez pas de faire votre tentative gratuite avant 10 heure / 22 heure ! Et on recharge son boost d'entrainement !",
+    "allowed_mentions": {
+        "parse": ["roles"]
+    }
 }
 
 response = requests.post(webhook_url, json=message)
