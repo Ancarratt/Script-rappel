@@ -1,20 +1,16 @@
-name: Send Random Discord Message
+name: Random Discord Message
 
 on:
   schedule:
-    - cron: '37 8 * * *'
-    - cron: '14 11 * * *'
-    - cron: '49 13 * * *'
-    - cron: '22 16 * * *'
-    - cron: '07 19 * * *'
-    - cron: '53 21 * * *'
-  workflow_dispatch:  # Permet aussi de le lancer manuellement
+    - cron: '0 * * * *'  # Chaque heure
+  workflow_dispatch:      # Lancement manuel possible
 
 jobs:
   send-message:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -22,5 +18,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run script
+      - name: Run script with random delay and chance
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: python random_message.py
