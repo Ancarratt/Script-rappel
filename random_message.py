@@ -12,7 +12,7 @@ print(f"[INFO] Attente de {delay} secondes avant de décider d’envoyer un mess
 time.sleep(delay)
 
 # 40 % de chances d'envoyer un message
-if random.random() < 0.4:
+if random.random() < 0.5:
     messages = [
         "C't'été, j'vends d'la moula en Alicante",
         "Le guetteur qui crie akha, harba au quartier",
