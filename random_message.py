@@ -43,7 +43,7 @@ if random.random() < 0.4:
         "À vingt piges, j'fais courir les condés"
         "J'me balade en Vespa, j'suis dans ma ville"
     ]
-    message = random.choice(messages)
+    message = f"🎵 {random.choice(messages)} 🎵"
     payload = {"content": message}
     
     response = requests.post(WEBHOOK_URL, json=payload)
