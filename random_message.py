@@ -1,7 +1,8 @@
 import requests
 import random
+import os
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/TON_WEBHOOK_ID_ICI"
+WEBHOOK_URL = os.environ["DISCORD_WEBHOOK"]
 
 MESSAGES = [
     "C't'été, j'vends d'la moula en Alicante",
