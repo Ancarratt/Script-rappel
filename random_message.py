@@ -7,7 +7,7 @@ import requests
 WEBHOOK_URL = os.environ["DISCORD_WEBHOOK"]
 
 # Délai aléatoire jusqu'à 30 minutes
-delay = random.randint(0, 1800)
+delay = random.randint(0, 100)
 print(f"[INFO] Attente de {delay} secondes avant de décider d’envoyer un message.")
 time.sleep(delay)
 
