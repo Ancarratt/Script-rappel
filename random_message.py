@@ -19,7 +19,7 @@ if random.random() < 0.4:
         "Ma brunette, mets l'chapeau d'paille, j'te fais voyager",
         "On s'verra loin de là, en Alicante",
         "Le cigare de Cuba, dégaine d'3arbi, de Savastano",
-       "J'suis posé, paire d'Asics, la miss calée à la mise à l'eau",
+        "J'suis posé, paire d'Asics, la miss calée à la mise à l'eau",
         "Ton p'tit boule dans la p'tite cuisine",
         "Dans l'appart, ça sent la résine",
         "Il s'met en fufu c't'année, c'est nous et ouais, la zine",
