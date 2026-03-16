@@ -2,12 +2,12 @@ name: Random Discord Message
 
 on:
   schedule:
-    - cron: '20 21 * * *'
-    - cron: '50 21 * * *'
-    - cron: '15 22 * * *'
-    - cron: '40 22 * * *'
-    - cron: '10 23 * * *'
-    - cron: '30 23 * * *'
+    - cron: '20 19 * * *'
+    - cron: '50 19 * * *'
+    - cron: '15 20 * * *'
+    - cron: '40 20 * * *'
+    - cron: '10 21 * * *'
+    - cron: '30 21 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install --no-cache-dir requests
 
       - name: Run script with random delay and chance
         env:
