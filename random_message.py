@@ -15,11 +15,11 @@ time.sleep(delay)
 if random.random() < 0.5:
     messages = [
         "<@1352573963343237120> t’es ma petite salope … envoie un BC si t’es un homme!",
-        "<@1352573963343237120> t’es ma petite salope … envoie un BC si t’es un homme!",
-        "<@1352573963343237120> t’es ma petite salope … envoie un BC si t’es un homme!",
-        "<@1352573963343237120> t’es ma petite salope … envoie un BC si t’es un homme!",
-        "<@1352573963343237120> t’es ma petite salope … envoie un BC si t’es un homme!",
-        "<@1352573963343237120> t’es ma petite salope … envoie un BC si t’es un homme!"
+        "<@1352573963343237120> t’es ma petite salope … envoie un BC si t’es un",
+        "<@1352573963343237120> t’es ma petite salope … envoie un BC si t’es",
+        "<@1352573963343237120> t’es ma petite salope … envoie un BC si",
+        "<@1352573963343237120> t’es ma petite salope … envoie un BC",
+        "<@1352573963343237120> t’es ma petite salope … envoie un"
     ]
     message = f" {random.choice(messages)} "
     payload = {"content": message}
