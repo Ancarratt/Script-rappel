@@ -2,7 +2,12 @@ name: Random Discord Message
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Chaque heure
+    - cron: '37 13 * * *'
+    - cron: '41 13 * * *'
+    - cron: '49 13 * * *'
+    - cron: '28 13 * * *'
+    - cron: '32 13 * * *'
+    - cron: '53 13 * * *'
   workflow_dispatch:
 
 jobs:
