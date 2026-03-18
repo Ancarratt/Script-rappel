@@ -12,7 +12,7 @@ print(f"[INFO] Attente de {delay} secondes avant de décider d’envoyer un mess
 time.sleep(delay)
 
 # 40 % de chances d'envoyer un message
-if random.random() < 0.6:
+if random.random() < 0.4:
     messages = [
         "<@334048588248252426> t’es ma petite salope … envoie un BC si t’es un homme!",
         "<@308656553907585025> t’es ma petite salope … envoie un BC si t’es un homme!",
